@@ -96,18 +96,12 @@
   justify-content: space-around;
 }
 
-.d-block{
-  display:block;
+.d-block {
+  display: block;
 }
 
 .social-wrapper {
   margin-bottom: 1.25rem;
-}
-
-@media (max-width: 980px) {
-  .social-wrapper {
-    justify-content: center;
-  }
 }
 
 .social-wrapper a {
@@ -158,10 +152,10 @@ a.more:hover {
   height: 100%;
   margin: 0 auto;
 }
-body{
+
+body {
   height: 100vh;
 }
-
 
 .main-wrapper {
   border-right: 1px solid #e1e0e0;
@@ -170,12 +164,9 @@ body{
   padding-top: 20px;
 }
 
-footer{
+footer {
   padding-top: 50px;
 }
-
-
-
 
 html {
   font-family: latoregular, sans-serif;
@@ -202,17 +193,14 @@ button {
   cursor: pointer;
 }
 
-
-
-img{
-  width:30px;
-  height:30px;
+img {
+  width: 30px;
+  height: 30px;
 }
 
-.fit{
-  object-fit:cover;
+.fit {
+  object-fit: cover;
 }
-
 
 .placeholder {
   background: url("../images/image-001.jpg");
@@ -264,6 +252,10 @@ header .logo {
   color: #58c93a;
 }
 
+.main-wrapper .first-panel {
+  width: 300px;
+  padding-right: 20px;
+}
 
 .toggle-menu-screen {
   display: none;
@@ -280,8 +272,6 @@ header .logo {
   transition: opacity .5s;
 }
 
-
-
 .open .toggle-menu-screen {
   visibility: visible;
   opacity: 1;
@@ -295,8 +285,6 @@ header .logo {
   padding: 20px;
   display: none;
 }
-
-
 
 .hero {
   height: 23.4375rem;
@@ -326,33 +314,29 @@ header .logo {
   text-align: center;
 }
 
-
-
 .image-container {
   width: 97.5%;
   display: grid;
   grid-gap: 10px;
   grid-template-columns: 35% 35% 30%;
-  grid-template-areas: "txt imgA imgB"
-                       "txt imgC imgC" ;
+  grid-template-areas: "txt imgA imgB" "txt imgC imgC";
 }
 
-.first-panel{
+.first-panel {
   grid-area: txt;
 }
 
 .second-panel {
   grid-area: imgA;
-  background-image: url("../images/image-001.jpg");
+  /* background-image: url("../images/image-001.jpg"); */
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-
 }
 
 .third-panel {
   grid-area: imgB;
-  background-image: url("../images/image-002.jpg");
+  /* background-image: url("../images/image-002.jpg"); */
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -361,23 +345,23 @@ header .logo {
 
 .fourth-panel {
   grid-area: imgC;
-  background-image: url("../images/image-003.jpg");
+  /* background-image: url("../images/image-003.jpg"); */
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
 }
 
 
-.main-wrapper .first-panel {
-  width: 300px;
-  padding-right: 20px;
-}
+
+
 
 
 /*------media----------*/
 
 @media (max-width: 980px) {
- 
+  .social-wrapper {
+    justify-content: center;
+  }
   .main-wrapper {
     flex-direction: column;
   }
@@ -393,18 +377,15 @@ header .logo {
   }
   .image-container {
     width: 100%;
-    grid-gap:10px;
+    grid-gap: 10px;
     grid-template-columns: 2fr 1fr;
     grid-auto-rows: 1fr;
-    grid-template-areas: "txt txt"
-                         "imgA imgB"
-                         "imgC imgB";
+    grid-template-areas: "txt txt" "imgA imgB" "imgC imgB";
   }
 }
 
-
 @media (max-width: 750px) {
-  .container{
+  .container {
     width: 640px;
   }
   .main-menu {
@@ -438,30 +419,22 @@ header .logo {
   .toggle-menu-screen {
     display: block;
   }
-  
   .container {
     max-width: 100%;
   }
   .image-container {
     width: 100%;
-    grid-gap:10px;
+    grid-gap: 10px;
     grid-template-rows: 2fr 1fr;
-    grid-template-areas: "txt txt"
-                         "imgA imgB"
-                         "imgC imgB";
+    grid-template-areas: "txt txt" "imgA imgB" "imgC imgB";
   }
   .third-panel {
     margin-bottom: 0;
   }
-  
 }
 
-
-
-
-  
 @media (max-width: 570px) {
-  .container{
+  .container {
     max-width: 100%;
   }
   .main-wrapper .first-panel {
@@ -471,13 +444,8 @@ header .logo {
   .image-container {
     grid-template-columns: 1fr;
     grid-template-rows: 1.3fr 0.7fr 0.7fr 0.7fr;
-    grid-template-areas:
-        "txt"
-        "imgA"
-        "imgB"
-        "imgC";
+    grid-template-areas: "txt" "imgA" "imgB" "imgC";
   }
-  
 }
 
 @media (max-width: 980px) {
@@ -485,22 +453,6 @@ header .logo {
     width: 100%;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .links-button {
   display: flex;
@@ -512,7 +464,7 @@ header .logo {
 .links-button button {
   margin-left: 10px;
   background: none;
-    border-style: none;
+  border-style: none;
 }
 
 .main-pager {
@@ -557,5 +509,3 @@ footer .logo {
   color: #292929;
   margin-bottom: 30px;
 }
-
-
